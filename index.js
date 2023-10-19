@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
 
 inquirer
     .prompt([
@@ -50,10 +51,46 @@ inquirer
         }
     ])
     .then((answers) => {
-        console.log(answers.title);
-        console.log(answers.description);
         console.log(answers);
-    })
-    .catch((error) => {
-        console.error(error);
+        const readmeContent = `
+# ${answers.title}
+
+## Description
+
+${answers.description}
+
+## Table of Contents
+
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Contribution](#contribution)
+4. [Testing](#testing)
+5. [License](#license)
+6. [Questions](#questions)
+
+## Installation
+
+${answers.Installation}
+
+## Usage
+
+${answers.usage}
+
+## Contribution
+
+${answers.contribution}
+
+## Testing
+
+${answers.testInstructions}
+
+## License
+
+This project is licensed under the ${answers.license} License.
+
+## Questions
+
+GitHub: [${answers.github}](${answers.github})
+Email: If you have any additional questions feel free to email me at ${answers.email}
+`;
     });
