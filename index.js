@@ -93,4 +93,18 @@ This project is licensed under the ${answers.license} License.
 GitHub: [${answers.github}](${answers.github})
 Email: If you have any additional questions feel free to email me at ${answers.email}
 `;
+
+        fs.writeFile('README.md', readmeContent, (err) => {
+            if (err) throw err;
+            console.log('README.md created successfully!');
+        });
+    })
+    .catch((error) => {
+        console.error(error);
     });
+
+
+
+
+
+
