@@ -37,7 +37,7 @@ inquirer
             name: "license",
             message: "Please choose a license",
             type: "list",
-            choices: ['MIT', 'Apache 2.0', 'GNU General Public v3.0', 'Eclipse Public'],
+            choices: ['MIT', 'Apache2.0', 'GNUGeneralPublicv3.0', 'EclipsePublic'],
         },
         {
             name: "github",
@@ -85,7 +85,7 @@ ${answers.contribution}
 ${answers.testInstructions}
 
 ## License
-
+![${answers.license}](https://img.shields.io/badge/${answers.license}-blue)
 This project is licensed under the ${answers.license} License.
 
 ## Questions
