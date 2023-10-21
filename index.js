@@ -94,7 +94,7 @@ GitHub: [${answers.github}](${answers.github})
 Email: If you have any additional questions feel free to email me at ${answers.email}
 `;
 
-        fs.writeFile('README.md', readmeContent, (err) => {
+        fs.writeFile('README-example.md', readmeContent, (err) => {
             if (err) throw err;
             console.log('README.md created successfully!');
         });

@@ -1,40 +1,25 @@
-
-# Awesome project
+# README Generator
 
 ## Description
-
-this is an awesome project
-
-## Table of Contents
-
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Contribution](#contribution)
-4. [Testing](#testing)
-5. [License](#license)
-6. [Questions](#questions)
+This is an application that runs in the console and will prompt you to enter information for each section of a high quality README and then generate the full document for you.
 
 ## Installation
-
-this is how you install it
+You will need to have node.js installed as well as Inquirer.
+- [node.js](https://nodejs.org/en) Install the LTS version
+- [Inquirer](https://www.npmjs.com/package/inquirer#documentation) Use version 8.2.4
 
 ## Usage
+Open the terminal and type 'node index.js' to initiate the generator. Answer the questions it asks you and when your done it will generate the README file in the root directory.
 
-this is how you use it
+![Preview of terminal when all questions have been answered](./images/terminal.png)
+*Terminal after all questions are answered*
 
-## Contribution
-
-me myself and i
-
-## Testing
-
-this is how you test it
+[Demo Video](https://drive.google.com/file/d/10QoWyKrllv8vVQG8e6-r5S-BeQC7_Yan/view)
 
 ## License
 ![MIT](https://img.shields.io/badge/MIT-blue)
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
 
 ## Questions
 
-GitHub: [mygithublink](mygithublink)
-Email: If you have any additional questions feel free to email me at myemail
+[My GitHub Profile](https://github.com/Andrewchall92)
