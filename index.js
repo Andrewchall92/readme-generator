@@ -20,40 +20,40 @@ inquirer
         },
         {
             name: "usage",
-            message: "Enter your usage instructions",
+            message: "Enter your usage instructions.",
             type: "input",
         },
         {
             name: "contribution",
-            message: "List all contributers",
+            message: "List all contributers:",
             type: "input",
         },
         {
             name: "testInstructions",
-            message: "Enter test instructions",
+            message: "Enter test instructions.",
             type: "input",
         },
         {
             name: "license",
-            message: "Please choose a license",
+            message: "Please choose a license.",
             type: "list",
             choices: ['MIT', 'Apache2.0', 'GNUGeneralPublicv3.0', 'EclipsePublic'],
         },
         {
             name: "github",
-            message: "Please enter your GitHub profile link",
+            message: "Please enter your GitHub username.",
             type: "input"
         },
         {
             name: "email",
-            message: "Please enter your email",
+            message: "Please enter your email.",
             type: "input",
         }
     ])
     .then((answers) => {
         console.log(answers);
         const readmeContent = `
-# ${answers.title}
+# ${answers.title} ![${answers.license}](https://img.shields.io/badge/${answers.license}-blue)
 
 ## Description
 
@@ -90,8 +90,8 @@ This project is licensed under the ${answers.license} License.
 
 ## Questions
 
-GitHub: [${answers.github}](${answers.github})
-Email: If you have any additional questions feel free to email me at ${answers.email}
+- [My GitHub profile](https://github.com/${answers.github})
+- If you have any additional questions feel free to email me at ${answers.email}
 `;
 
         fs.writeFile('README-example.md', readmeContent, (err) => {

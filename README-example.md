@@ -1,9 +1,9 @@
 
-# The Best Project
+# The Project Name ![MIT](https://img.shields.io/badge/MIT-blue)
 
 ## Description
 
-This is a description of what the Best Project is.
+This is a description of the project.
 
 ## Table of Contents
 
@@ -16,19 +16,19 @@ This is a description of what the Best Project is.
 
 ## Installation
 
-This is how you install it.
+This is how you install the project.
 
 ## Usage
 
-This is how you use it.
+This is how you use the project.
 
 ## Contribution
 
-Me Myself and I.
+Me Myself and I
 
 ## Testing
 
-This is how you test it.
+This is how you test the project.
 
 ## License
 ![MIT](https://img.shields.io/badge/MIT-blue)
@@ -36,5 +36,5 @@ This project is licensed under the MIT License.
 
 ## Questions
 
-GitHub: [www.mygithublink.com](www.mygithublink.com)
-Email: If you have any additional questions feel free to email me at myemail@email.com
+- [My GitHub profile](https://github.com/andrewchall92)
+- If you have any additional questions feel free to email me at myemail@email.com
